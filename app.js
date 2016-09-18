@@ -13,7 +13,7 @@ merchlineApp.config([
 		});*/
 		$routeProvide
 			.when('/', {
-				templateUrl: 'explosionsinthesky/Pages/_home.html',
+				templateUrl: 'https://sviatoslav-lashkiv.github.io/explosionsinthesky/Pages/_home.html',
 				controller: 'MainCtrl'
 			})
 			.when('/music', {
