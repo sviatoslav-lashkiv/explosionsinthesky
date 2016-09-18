@@ -12,11 +12,11 @@ merchlineApp.config([
 			requireBase: false
 		});*/
 		$routeProvide
-			.when('/#/', {
-				templateUrl:"Pages/_home.html",
+			.when('/', {
+				templateUrl:"Pages/home.html",
 				controller: "MainCtrl"
 			})
-			.when('/#/music', {
+			.when('/music', {
 				templateUrl: 'Pages/_music.html',
 				controller: 'MainCtrl'
 			})
