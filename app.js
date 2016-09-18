@@ -13,8 +13,8 @@ merchlineApp.config([
 		});*/
 		$routeProvide
 			.when('/', {
-				templateUrl:'Pages/_home.html',
-				controller: 'MainCtrl'
+				templateUrl:"Pages/_home.html",
+				controller: "MainCtrl"
 			})
 			.when('/music', {
 				templateUrl: 'Pages/_music.html',
