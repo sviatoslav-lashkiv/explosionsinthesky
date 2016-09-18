@@ -17,35 +17,35 @@ merchlineApp.config([
 				controller: "MainCtrl"
 			})
 			.when('/music', {
-				templateUrl: 'Pages/_music.html',
+				templateUrl: 'Pages/music.html',
 				controller: 'MainCtrl'
 			})
 			.when('/apparel', {
-				templateUrl: 'Pages/_apparel.html',
+				templateUrl: 'Pages/apparel.html',
 				controller: 'MainCtrl'
 			})
 			.when('/accessories', {
-				templateUrl: 'Pages/_accessories.html',
+				templateUrl: 'Pages/accessories.html',
 				controller: 'MainCtrl'
 			})
 			.when('/gift-cards', {
-				templateUrl: 'Pages/_gift-cards.html',
+				templateUrl: 'Pages/gift-cards.html',
 				controller: 'MainCtrl'
 			})
 			.when('/merchline/:merchId', {
-				templateUrl: 'Merch-page/_merch-detail.html',
+				templateUrl: 'Merch-page/merch-detail.html',
 				controller: 'MerchDetailCtrl'
 			})
 			.when('/cart', {
-				templateUrl: 'Order-page/_cart.html',
+				templateUrl: 'Order-page/cart.html',
 				controller: 'OrderCtrl'
 			})
 			.when('/order-now', {
-				templateUrl: 'Order-page/_order.html',
+				templateUrl: 'Order-page/order.html',
 				controller: 'OrderCtrl'
 			})
 			.when('/success', {
-				templateUrl: 'Order-page/_success.html',
+				templateUrl: 'Order-page/success.html',
 				controller: 'OrderCtrl'
 			})
 			.otherwise({
