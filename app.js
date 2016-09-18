@@ -11,9 +11,9 @@ merchlineApp.config([
 			enabled: true,
 			requireBase: false
 		});*/
-		$routeProvide
+		$routeProvider
 			.when('/', {
-				templateUrl: 'https://sviatoslav-lashkiv.github.io/explosionsinthesky/Pages/_home.html',
+				templateUrl:'Pages/_home.html',
 				controller: 'MainCtrl'
 			})
 			.when('/music', {
