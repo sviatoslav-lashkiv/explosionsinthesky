@@ -6,12 +6,12 @@ var merchlineApp = angular.module('merchlineApp', ['ngRoute', 'ngResource'] );
 /* Config */
 merchlineApp.config([
 	'$routeProvider', '$locationProvider',
-	function($routeProvide, $locationProvider) {
+	function($routeProvider, $locationProvider) {
 		/*$locationProvider.html5Mode({
 			enabled: true,
 			requireBase: false
 		});*/
-		$routeProvide
+		$routeProvider
 			.when('/', {
 				templateUrl:"Pages/_home.html",
 				controller: "MainCtrl"
@@ -62,7 +62,6 @@ merchlineApp.factory('Merch', [
 			format: 'json',
 			apiKey: 'someKeyThis'
 		}, {
-			// action: {method: </>, params; </>, isArray: <?>, ...}
 			update: {method: 'PUT', params: {merchId: '@merch'}, isArray: true}
 			}
 		);
@@ -107,43 +106,6 @@ merchlineApp.controller('MainCtrl', [
 		$scope.resetCarts = function () {
 			$scope.carts = [];
 		}
-		//$scope.merchline = Merch.query();
 
-		//Merch.query(params, successcb, errorcb)
-		//Merch.get(params, successcb, errorcb)
-		//Merch.save(params, payloadData, successcb, errorcb)
-		//Merch.delete(params, successcb, errorcb)
-
-		/* $http.get('merchline.json').success(function(data, status, headers, config) {
-			$scope.merchline = data;
-		}); */
-
-		//console.log( '$location.url() - ', $location.url() );
-		//console.log( '$location.path() - ', $location.path() );
-		//console.log( '$location.search() - ', $location.search() );
-		//console.log( '$location.hash() - ', $location.hash() );
 }]);
 
-
-
-
-
-
-
-
-/*
- // Declare app level module which depends on views, and components
-var merchlineApp = angular.module('merchlineApp', [
-  'ngRoute',
-  'merchlineApp.view1',
-  'merchlineApp.view2',
-  'merchlineApp.version'
-]);
-
-merchlineApp.config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
-  $locationProvider.hashPrefix('!');
-
-  $routeProvider.otherwise({redirectTo: '/view1'});
-}]);
-
- */
