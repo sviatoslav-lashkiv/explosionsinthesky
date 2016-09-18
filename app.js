@@ -7,10 +7,10 @@ var merchlineApp = angular.module('merchlineApp', ['ngRoute', 'ngResource'] );
 merchlineApp.config([
 	'$routeProvider', '$locationProvider',
 	function($routeProvide, $locationProvider) {
-		/*$locationProvider.html5Mode({
+		$locationProvider.html5Mode({
 			enabled: true,
 			requireBase: false
-		});*/
+		});
 		$routeProvide
 			.when('/', {
 				templateUrl:"Pages/home.html",
