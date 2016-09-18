@@ -1,0 +1,35 @@
+{
+  "title": "Gift Cards",
+  "images": [
+    "img/giftcard.png"
+  ],
+  "media": [
+    {
+      "category": "Virtual Gift Card",
+      "price": 10,
+      "status": true
+    },
+    {
+      "category": "Virtual Gift Card",
+      "price": 25,
+      "status": true
+    },
+    {
+      "category": "Virtual Gift Card",
+      "price": 75,
+      "status": true
+    },
+    {
+      "category": "Virtual Gift Card",
+      "price": 100,
+      "status": true
+    }
+  ],
+  "details": [
+      "Gift card purchases are delivered via email and contain instructions on how the code can be redeemed at checkout.",
+      "The redeemable code will be sent via email and can also be printed at home and given to recipient in person. No physical item will be sent with gift card purchase.",
+      "Good for anything in the storefront, including all physical and digital products. Codes will apply to this storefront only.",
+      "Gift cards have no additional processing fees, and can be used multiple times until the card balance hits zero."
+
+  ]
+}

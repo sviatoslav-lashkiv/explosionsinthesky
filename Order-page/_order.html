@@ -1,0 +1,237 @@
+<div class="row">
+  <div class="col-md-6 col-md-offset-3 col-xs-12">
+
+  <form name="orderForm" method="post" novalidate>
+
+    <!-- Custumer information -->
+    <legend>Customer information</legend>
+    <!-- E-MAIL -->
+    <div class="form-group col-xs-12"
+        ng-class="{'has-error' : orderForm.email.$invalid && !orderForm.email.$pristine }">
+      <input
+            type="email"
+            name="email"
+            class="form-control input-lg"
+            placeholder="Email"
+            ng-model="order.email"
+            required>
+      <p
+        ng-show="orderForm.email.$invalid && !orderForm.email.$pristine"
+        class="help-block">
+        <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+        Enter a valid email.
+      </p>
+      <p>
+        Already have an account with us? Already have an account with us? <a href>Log in</a>
+      </p>
+    </div>
+
+    <legend>Shipping address</legend>
+
+    <!-- NAME -->
+    <div
+        class="form-group col-md-6 col-xs-12"
+        ng-class="{'has-error' : orderForm.name.$invalid && !orderForm.name.$pristine }">
+        <input
+              type="text"
+              name="name"
+              class="form-control input-lg"
+              placeholder="First name"
+              ng-model="order.name"
+              ng-minlength="3"
+              required>
+        <p
+          ng-show="orderForm.name.$invalid && !orderForm.name.$pristine"
+          class="help-block">
+          <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+          You name is required.
+        </p>
+        <p
+          ng-show="orderForm.name.$error.minlength"
+          class="help-block">
+          <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+          Username is too short.
+        </p>
+    </div>
+
+    <!-- LAST NAME -->
+    <div
+        class="form-group col-md-6 col-xs-12"
+        ng-class="{'has-error' : orderForm.lastName.$invalid && !orderForm.lastName.$pristine }">
+      <input
+            type="text"
+            name="lastName"
+            class="form-control input-lg"
+            placeholder="Last name"
+            ng-model="order.lastName"
+            ng-minlength="3"
+            required>
+      <p
+        ng-show="orderForm.lastName.$invalid && !orderForm.lastName.$pristine"
+        class="help-block">
+        <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+        You last name is required.
+      </p>
+      <p
+        ng-show="orderForm.lastName.$error.minlength"
+        class="help-block">
+        <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+        Username is too short.
+      </p>
+    </div>
+
+    <!-- ADRESS -->
+    <div
+        class="form-group col-md-8 col-xs-12"
+        ng-class="{'has-error' : orderForm.address.$invalid && !orderForm.address.$pristine }">
+      <input
+            type="text"
+            name="address"
+            class="form-control input-lg"
+            placeholder="Address"
+            ng-moder="order.address"
+            ng-min-length="3"
+            required>
+        <p
+          ng-show="orderForm.address.$error.minlength"
+          class="help-block">
+          <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+          Value is too short.
+        </p>
+    </div>
+
+    <!-- ATP.,SUITE, ETS -->
+    <div class="form-group col-md-4 col-xs-12">
+      <input
+            type="text"
+            name="suite"
+            class="form-control input-lg"
+            placeholder="Apt.,suite,ets."
+            ng-model="order.suite">
+    </div>
+
+    <!-- CITY -->
+    <div class="form-group col-xs-12">
+      <input
+            type="text"
+            class="form-control input-lg"
+            placeholder="City"
+            name="city"
+            ng-model="order.city">
+    </div>
+
+    <!-- COUNTRY -->
+    <div
+        class="form-group col-md-8 col-xs-12"
+        ng-class="{'has-error' : orderForm.country.$invalid && !orderForm.country.$pristine }">
+      <input
+            type="text"
+            class="form-control input-lg"
+            placeholder="Country"
+            name="country"
+            ng-model="order.country"
+            ng-minlength="3"
+            required>
+            <p
+              ng-show="orderForm.country.$error.minlength"
+              class="help-block">
+              <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+              Value is too short.
+            </p>
+    </div>
+
+    <!-- POSTAL CODE -->
+    <div
+        class="form-group col-md-4 col-xs-12"
+        ng-class="{'has-error' : orderForm.postalCode.$invalid && !orderForm.postalCode.$pristine }">
+      <input
+            type="text"
+            class="form-control input-lg"
+            placeholder="Postal code"
+            name="postalCode"
+            ng-model="order.postalCode"
+            ng-minlength="5"
+            required>
+            <p
+              ng-show="orderForm.postalCode.$error.minlength"
+              class="help-block">
+              <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+              Value is too short.
+            </p>
+    </div>
+
+    <!-- CHECKBOX "SAVE INFO" -->
+    <div class="form-group col-xs-12">
+        <div class="checkbox">
+          <label>
+            <input
+                  type="checkbox"
+                  name="checkbox"
+                  ng-model="order.checkbox">
+                  Save this information for next time
+          </label>
+        </div>
+    </div>
+
+    <!-- SHIPPING METHODS -->
+    <legend>Shipping method</legend>
+    <div class="form-group col-xs-12"
+        ng-class="{'has-error' : orderForm.shippingMethod.$invalid }">
+      <table class="table table-hover" ng-click="order.helpBlock = true">
+        <tr ng-repeat="method in shippingMethods">
+          <td>
+            <label>
+              <input
+                    type="radio"
+                    name="shippingMethod"
+                    value="{{ method.name }}"
+                    ng-click="totalPrice(method.price)"
+                    ng-model="order.shippingMethod"
+                    required>
+                {{ method.name }}
+            </label>
+          </td>
+          <td class="text-right">
+            <span class="label label-primary">{{ method.price | currency }}</span>
+          </td>
+        </tr>
+      </table>
+      <p
+        ng-hide="order.helpBlock"
+        class="help-block">
+        <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+        Select shipping method!
+      </p>
+    </div>
+
+    <!-- TOTAL PRICE -->
+    <div class="text-center">
+        <h3>Total: {{ priceCount | currency }}</h3>
+    </div>
+
+    <!-- RETURN TO BACK ON THE MAIN PAGE -->
+    <a href="/cart" class="btn btn-lg btn-link col-md-4 hidden-xs">
+      <i class="fa fa-chevron-left" aria-hidden="true"></i><i class="fa fa-chevron-left" aria-hidden="true"></i>
+       Return to cart
+    </a>
+
+    <!-- SENT FORM -->
+      <input
+            class="btn btn-lg btn-warning col-md-offset-4 col-md-4 col-xs-12"
+            type="submit"
+            name="button"
+            value="Please, fill form..."
+            ng-hide="orderForm.$valid"
+            ng-disabled="true"
+            >
+      <a href="/success"
+          class="btn btn-lg btn-success col-md-offset-4 col-md-4 col-xs-12"
+          ng-hide="orderForm.$invalid"
+          ng-click="resetCarts()"
+          >
+        Continue
+        <i class="fa fa-chevron-right" aria-hidden="true"></i><i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+  </form>
+  </div>
+</div>

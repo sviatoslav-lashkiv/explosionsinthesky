@@ -1,0 +1,50 @@
+{
+  "title": "How Strange, Innocence",
+  "images": [
+    "img/music/how_strange_innocence.jpg",
+    "img/music/black-vinyl-1.jpg",
+    "img/music/black-vinyl-2.jpg",
+    "img/music/black-vinyl-3.jpg",
+    "img/music/black-vinyl-4.jpg"
+  ],
+  "media": [
+    {
+      "category": "CD",
+      "price": 12,
+      "status": true
+    },
+    {
+      "category": "Vinyl 2xLP",
+      "price": 20,
+      "status": false
+    },
+    {
+      "category": "MP3 + Black-Vinyl 2xLP",
+      "price": 40,
+      "status": true
+    },
+    {
+      "category": "Black Vinyl 2xLP",
+      "price": 40,
+      "status": false
+    },
+    {
+      "category": "Red Vinyl 2xLP",
+      "price": 22,
+      "status": true
+    }
+  ],
+  "tracklist": [
+    "A Song For Our Fathers",
+    "Snow and Lights",
+    "Magic Hours",
+    "Look Into the Air",
+    "Glittering Blackness",
+    "Time Stops",
+    "Remember Me As a Time of Day"
+  ],
+  "details": [
+    "To view all available methods of shipping for your order, please use the Shipping Rate Calculator by adding items to your cart, clicking Checkout and then enter your destination country and zip, and you will find all available shipping methods and costs for your order.",
+    "Shipping prices are determined straight from the carriers. The cost of the shipping depends on the weight of your entire order and its destination from our warehouse. In addition to the actual postage, Merchline also charges a nominal handling fee to cover other costs packaging and handling your order with care, and we are fans like you, so we keep these costs as low as possible."
+  ]
+}

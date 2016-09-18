@@ -1,0 +1,22 @@
+[
+  {
+    "name": "First Class Package International",
+    "price": 8
+  },
+  {
+    "name": "USPS Priority Mail International",
+    "price": 22
+  },
+  {
+    "name": "USPS Priority Mail Express International",
+    "price": 99
+  },
+  {
+    "name": "FedEx International Economy",
+    "price": 23
+  },
+  {
+    "name": "FedEx International Priority",
+    "price": 999
+  }
+]

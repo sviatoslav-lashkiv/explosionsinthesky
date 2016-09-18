@@ -1,0 +1,289 @@
+[
+  {
+    "collection": "music",
+    "title": "How Strange, Innocence",
+    "id": "how-strange-innocence",
+    "year": 2000,
+    "price": 12,
+    "imageUrl": "img/music/how_strange_innocence.jpg",
+    "imageUrlHover": "",
+    "status": true
+  },
+  {
+    "collection": "music",
+    "title": "Those Who Tell the Truth Shall Die, Those Who Tell the Truth Shall Live Forever",
+    "id": "those-who-tell-the-truth-shall-die",
+    "year": 2001,
+    "price": 12,
+    "imageUrl": "img/music/thosewhotell.jpg",
+    "imageUrlHover": "",
+    "status": true
+  },
+  {
+    "collection": "music",
+    "title": "The Earth Is Not a Cold Dead Place",
+    "id": "the-earth-is-not-a-cold-dead-place",
+    "year": 2003,
+    "price": 13,
+    "imageUrl": "img/music/the_earth_is_not_a_cold_dead_dlace.png",
+    "imageUrlHover": "",
+    "status": true
+  },
+  {
+    "collection": "music",
+    "title": "All of a Sudden I Miss Everyone",
+    "id": "all-of-a-sudden-i-miss-everyone",
+    "year": 2007,
+    "price": 12,
+    "imageUrl": "img/music/all_of_a_sudden.jpg",
+    "imageUrlHover": "img/music/all_of_a_sudden_hover.jpg",
+    "status": false
+  },
+  {
+    "collection": "music",
+    "title": "Take Care, Take Care, Take Care",
+    "id": "take-care",
+    "year": 2011,
+    "price": 13,
+    "imageUrl": "img/music/take_care.png",
+    "imageUrlHover": "img/music/take_care_hover.jpg",
+    "status": false
+  },
+  {
+    "collection": "music",
+    "title": "Prince Avalanche: An Original Motion Picture Soundtrack",
+    "id": "prince-avalanche",
+    "year": 2012,
+    "price": 10,
+    "imageUrl": "img/music/prince_avalanche.jpg",
+    "imageUrlHover": "img/music/prince_avalanche_hover.jpg",
+    "status": true
+  },
+  {
+    "collection": "music",
+    "title": "Explosions In The Sky and David Wingo 'Manglehorn: An Original Motion Picture Soundtrack' ",
+    "id": "manglehorn",
+    "year": 2013,
+    "price": 10,
+    "imageUrl": "img/music/manglehorn.jpg",
+    "imageUrlHover": "img/music/manglehorn_hover.jpg",
+    "status": true
+  },
+  {
+    "collection": "music",
+    "title": "The Wilderness",
+    "id": "the-wilderness",
+    "year": 2016,
+    "price": 10,
+    "imageUrl": "img/music/the_wilderness.png",
+    "imageUrlHover": "img/music/the_wilderness_hover.png",
+    "status": true
+  },
+  {
+    "collection": "apparel",
+    "title": "'Disintegration' Unisex T-Shirt",
+    "id": "disintegration-unisex-t-shirt",
+    "price": 22,
+    "imageUrl": "img/apparel/Explosions_Shirt_Levitation_Unisex_large.jpg",
+    "imageUrlHover": "img/apparel/Explosions_Shirt_Levitation_Unisex_detail_large.jpg",
+    "status": true
+  },
+  {
+    "collection": "apparel",
+    "title": "'Wilderness Circle' Unisex T-Shirt",
+    "id": "wilderness-circle-unisex-t-shirt",
+    "price": 22,
+    "imageUrl": "img/apparel/Explosions_Shirt_NatureCircle_Unisex_rev_large.jpg",
+    "imageUrlHover": "img/apparel/Explosions_Shirt_NatureCircle_Unisex_detail_large.jpg",
+    "status": true
+  },
+  {
+    "collection": "apparel",
+    "title": "'Explorer' Unisex T-Shirt",
+    "id": "explorer-unisex-t-shirt",
+    "price": 22,
+    "imageUrl": "img/apparel/Explosions_Shirt_Explorer_Unisex_large.jpg",
+    "imageUrlHover": "img/apparel/Explosions_Shirt_Explorer_Unisex_detail_large.jpg",
+    "status": true
+  },
+  {
+    "collection": "apparel",
+    "title": "'Wilderness Circle' Women's T-Shirt",
+    "id": "wilderness-circle-womens-t-shirt",
+    "price": 22,
+    "imageUrl": "img/apparel/Explosions_Shirt_NatureCircle_Womens_large.jpg",
+    "imageUrlHover": "img/apparel/Explosions_Shirt_NatureCircle_Womens_detail_large.jpg",
+    "status": true
+  },
+  {
+    "collection": "apparel",
+    "title": "'Explorer' Women's T-Shirt ",
+    "id": "explorer-womens-t-shirt",
+    "price": 22,
+    "imageUrl": "img/apparel/Explosions_Shirt_Explorer_Womens_large.jpg",
+    "imageUrlHover": "img/apparel/Explosions_Shirt_Explorer_Womens_detail_large.jpg",
+    "status": true
+  },
+  {
+    "collection": "apparel",
+    "title": "'Disintegration' Women's T-Shirt",
+    "id": "disintegration-womens-t-shirt",
+    "price": 22,
+    "imageUrl": "img/apparel/Explosions_Shirt_Levitation_Womens_large.jpg",
+    "imageUrlHover": "img/apparel/Explosions_Shirt_Levitation_Womens_detail_large.jpg",
+    "status": true
+  },
+  {
+    "collection": "apparel",
+    "title": "'Eclipse' Unisex T-Shirt ",
+    "id": "eclipse-unisex-t-shirt",
+    "price": 22,
+    "imageUrl": "img/apparel/Explosions_Shirt_Eclipse_Unisex_large.jpg",
+    "imageUrlHover": "img/apparel/Explosions_Shirt_Eclipse_Unisex_detail_large.jpg",
+    "status": true
+  },
+  {
+    "collection": "apparel",
+    "title": "'Fox' Unisex Zip Hoodie",
+    "id": "fox-unisex-zip-hoodie",
+    "price": 40,
+    "imageUrl": "img/apparel/Explosions_Ziphoodie_Fox_Unisex_large.jpg",
+    "imageUrlHover": "",
+    "status": true
+  },
+  {
+    "collection": "apparel",
+    "title": "'Maps' Unisex T-Shirt ",
+    "id": "maps-unisex-t-shirt ",
+    "price": 22,
+    "imageUrl": "img/apparel/Explosions_Shirt_Mas_Unisex_large.jpg",
+    "imageUrlHover": "",
+    "status": true
+  },
+  {
+    "collection": "apparel",
+    "title": "'Box' Unisex T-Shirt - Black",
+    "id": "box-unisex-t-shirt-black",
+    "price": 22,
+    "imageUrl": "img/apparel/Explosions_Shirt_Box_Unisex_large.png",
+    "imageUrlHover": "",
+    "status": true
+  },
+  {
+    "collection": "apparel",
+    "title": "'Wire' Unisex T-Shirt ",
+    "id": "wire-unisex-t-shirt ",
+    "price": 22,
+    "imageUrl": "img/apparel/Explosions_Shirt_Wire_Unisex_large.jpg",
+    "imageUrlHover": "",
+    "status": true
+  },
+  {
+    "collection": "apparel",
+    "title": "'Box' Women's T-Shirt ",
+    "id": "box-womens-t-shirt ",
+    "price": 10,
+    "imageUrl": "img/apparel/Explosions_Shirt_Box_large.png",
+    "imageUrlHover": "",
+    "status": false
+  },
+  {
+    "collection": "apparel",
+    "title": "'Tiger Boat' Women's T-Shirt ",
+    "id": "tiger-boat-womens-t-shirt ",
+    "price": 20,
+    "imageUrl": "img/apparel/Explosions_Shirt_TigerBoat_large.png",
+    "imageUrlHover": "",
+    "status": true
+  },
+  {
+    "collection": "apparel",
+    "title": "'Eskimo' Women's T-Shirt - Light Blue",
+    "id": "eskimo-womens-t-shirt-light-blue",
+    "price": 20,
+    "imageUrl": "img/apparel/Explosions_Shirt_Eskimo_BLK_large.png",
+    "imageUrlHover": "",
+    "status": true
+  },
+  {
+    "collection": "apparel",
+    "title": "'Wishing Well' Women's T-Shirt - Creme",
+    "id": "wishing-well-womens-t-shirt-creme",
+    "price": 22,
+    "imageUrl": "img/apparel/Explosions_Shirt_WishingWell_large.png",
+    "imageUrlHover": "",
+    "status": true
+  },
+  {
+    "collection": "apparel",
+    "title": "'Wishing Well' Women's T-Shirt - Forest e",
+    "id": "wishing-well-womens-t-shirt-forest-e",
+    "price": 20,
+    "imageUrl": "img/apparel/Explosions_Shirt_Well_large.png",
+    "imageUrlHover": "",
+    "status": true
+  },
+  {
+    "collection": "apparel",
+    "title": "'Train' Women's T-Shirt - Natural",
+    "id": "train-womens-t-shirt-natural",
+    "price": 20,
+    "imageUrl": "img/apparel/Explosions_Shirt_Train_Natural_large.png",
+    "imageUrlHover": "",
+    "status": true
+  },
+  {
+    "collection": "apparel",
+    "title": "'Box' Unisex T-Shirt - Navy",
+    "id": "box-unisex-t-shirt-navy",
+    "price": 20,
+    "imageUrl": "img/apparel/Explosions_Shirt_Box_Unisex_large.png",
+    "imageUrlHover": "",
+    "status": true
+  },
+  {
+    "collection": "apparel",
+    "title": "'Eskimo' Women's T-Shirt - Baby Blue",
+    "id": "eskimo-womens-t-shirt-baby-blue",
+    "price": 20,
+    "imageUrl": "img/apparel/Explosions_Shirt_Eskimo_WHT_large.png",
+    "imageUrlHover": "",
+    "status": true
+  },
+  {
+    "collection": "accessories",
+    "title": "'The Wilderness' Turntable Slipmat",
+    "id": "the-wilderness-turntable-slipmat",
+    "price": 10,
+    "imageUrl": "img/accessories/Explosions_slipmat_large.jpg",
+    "imageUrlHover": "",
+    "status": true
+  },
+  {
+    "collection": "accessories",
+    "title": "'Disintegration' Tote Bag",
+    "id": "disintegration-tote-bag",
+    "price": 20,
+    "imageUrl": "img/accessories/Explosions_Bag_Levitation_large.jpg",
+    "imageUrlHover": "img/accessories/Explosions_Bag_Levitation_detail_large.jpg",
+    "status": true
+  },
+  {
+    "collection": "accessories",
+    "title": "'Wilderness Circle' Tote Bag ",
+    "id": "wilderness-circle-tote-bag ",
+    "price": 20,
+    "imageUrl": "img/accessories/Explosions_Bag_NatureCircle_large.jpg",
+    "imageUrlHover": "img/accessories/Explosions_Bag_NatureCircle_detail_large.jpg",
+    "status": true
+  },
+  {
+    "collection": "gift-cards",
+    "title": "Gift Cards",
+    "id": "gift-cards",
+    "price": 25,
+    "imageUrl": "img/giftcard.png",
+    "imageUrlHover": "",
+    "status": true
+  }
+]

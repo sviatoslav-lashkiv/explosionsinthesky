@@ -1,0 +1,29 @@
+body {
+	font-family: Arial, serif;
+}
+
+h2 {
+	padding-bottom: 30px;
+}
+
+.thumbnail{
+  border: none;
+}
+
+.item {
+  height: 420px;
+}
+
+.item .label {
+  position: absolute;
+  top: 0;
+  right: 16px;
+  z-index: 1;
+  display: block;
+  padding: 8px;
+  font-size: 0.9em
+}
+
+.merch-image img {
+  padding-bottom: 15px;
+}

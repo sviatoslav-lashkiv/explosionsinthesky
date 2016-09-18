@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="merchlineApp">
+<head>
+  <base href="/" />
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Explosions in the Sky | Merchline</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="app.css">
+</head>
+<body ng-controller="MainCtrl">
+  <header>
+    <div class="container">
+      <div class="row">
+        <img src="img\logo.png" class="img-responsive" alt="logo" />
+      </div>
+    </div>
+  </header>
+
+  <nav class="navbar navbar-default" role="navigation">
+    <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+      </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li><a href="/">View All</a></li>
+          <li><a href="/music">Music</a></li>
+          <li><a href="/apparel">Apparel</a></li>
+          <li><a href="/accessories">Accessories</a></li>
+          <li><a href="/merchline/gift-cards">Gift Cards</a></li>
+        </ul>
+        <form class="navbar-form navbar-right hidden-xs">
+          <div class="form-group">
+            <a href="/cart">
+              <button class="form-control" ng-show="carts.length > 0" ng-model="cartInput" ng-cloak>
+                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                In Cart: {{ carts.length }} items; Total: {{ total() | currency }}
+              </button>
+            </a>
+          </div>
+        </form>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+
+    <!-- CART BUTTON (VISIBLE ON XS) -->
+    <div class="col-xs-12 visible-xs-inline">
+      <div class="form-group">
+        <a href="/cart">
+          <button class="form-control btn-primary" ng-show="carts.length > 0" ng-model="cartInput" ng-cloak>
+            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+            In Cart: {{ carts.length }} items; Total: {{ total() | currency }}
+          </button>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+
+  	<ng-view></ng-view>
+
+    <hr>
+
+  	<footer>
+  		<p>&copy; Sviatoslav Lashkiv | 2016</p>
+  	</footer>
+
+  </div><!-- /.container -->
+
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://use.fontawesome.com/b3e53a0168.js"></script>
+
+<!-- Angular.js Core JavaScript
+=================================  -->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-route.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-resource.js"></script>
+
+<script src="app.js"></script>
+<script src="Merch-page/MerchDetailCtrl.js"></script>
+<script src="Order-page/OrderCtrl.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+<div class="row">
+	<div class="col-xs-12 col-sm-6 merch-image">
+		<img ng-src="{{mainImageUrl}}" alt="{{merch.title}}" class="img-responsive" />
+		<div class="row">
+			<div class="col-xs-4" ng-repeat="img in merch.images">
+				<img ng-src="{{img}}" class="img-responsive" alt="{{merch.title}}" ng-click="setImage(img)" />
+			</div>
+		</div>
+	</div>
+	<div class="col-xs-12 col-sm-6">
+		<h4 class="text-uppercase">'{{merch.title}}'</h4>
+		<table class="table table-hover">
+			<tbody>
+				<tr ng-repeat="item in merch.media">
+					<td>{{ item.category }}</td>
+					<td>{{ item.price | currency }}</td>
+					<td><button
+											class="btn btn-block text-uppercase"
+											ng-init="status = item.status ? 'Add To Cart' : 'Sold Out'"
+											ng-class="{'btn-success': item.status, 'btn-default disabled': !item.status }"
+											ng-click="addCart(merch.title, merch.images[0], item.category, item.price)"
+								>{{ status }}</button></td>
+				</tr>
+			</tbody>
+		</table>
+
+		<hr />
+
+		<strong ng-init="tracklist = item.tracklist ? 'Track Listing:' : ' ' ">{{ tracklist }}</strong>
+		<ol>
+			<li ng-repeat="track in merch.tracklist">{{ track }}</li>
+		</ol>
+
+		<hr />
+
+		<h4>Shipping:</h4>
+		<p ng-repeat="detail in merch.details">{{ detail }}</p>
+
+	</div>
+</div>
