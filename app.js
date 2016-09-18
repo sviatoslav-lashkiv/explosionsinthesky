@@ -9,7 +9,7 @@ merchlineApp.config([
 	function($routeProvide, $locationProvider) {
 		$locationProvider.html5Mode({
 			enabled: true,
-			requireBase: true
+			requireBase: false
 		});
 		$routeProvide
 			.when('/', {
