@@ -6,12 +6,12 @@ var merchlineApp = angular.module('merchlineApp', ['ngRoute', 'ngResource'] );
 /* Config */
 merchlineApp.config([
 	'$routeProvider', '$locationProvider',
-	function($routeProvider, $locationProvider) {
+	function($routeProvide, $locationProvider) {
 		/*$locationProvider.html5Mode({
 			enabled: true,
 			requireBase: false
 		});*/
-		$routeProvider
+		$routeProvide
 			.when('/', {
 				templateUrl:"Pages/_home.html",
 				controller: "MainCtrl"
