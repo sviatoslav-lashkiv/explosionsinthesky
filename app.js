@@ -11,7 +11,7 @@ merchlineApp.config([
 			enabled: true,
 			requireBase: false
 		});*/
-		$routeProvider
+		$routeProvide
 			.when('/', {
 				templateUrl:'Pages/_home.html',
 				controller: 'MainCtrl'
